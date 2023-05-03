@@ -34,6 +34,13 @@ body {
   display: table-cell;
 }
 
+@supports not (width: 100dvw) {
+  .Map-container {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
 .Map-cta {
   display: flex;
   align-items: center;
